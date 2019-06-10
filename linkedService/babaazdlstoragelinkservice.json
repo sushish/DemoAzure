@@ -1,0 +1,13 @@
+{
+	"name": "babaazdlstoragelinkservice",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"type": "AzureDataLakeStore",
+		"typeProperties": {
+			"dataLakeStoreUri": "https://babadatalakestorage.azuredatalakestore.net/webhdfs/v1",
+			"tenant": "60cc1c52-5b42-48c4-b261-3c7fb908987b",
+			"subscriptionId": "ad1e724d-1e06-43d4-9dc9-159faac7c6e2",
+			"resourceGroupName": "babarg"
+		}
+	}
+}
