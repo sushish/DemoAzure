@@ -1,0 +1,6 @@
+{
+	"name": "babaIntegrationRunTime",
+	"properties": {
+		"type": "SelfHosted"
+	}
+}

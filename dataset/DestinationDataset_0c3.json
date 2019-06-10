@@ -1,0 +1,46 @@
+{
+	"name": "DestinationDataset_0c3",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "babalinkedserviceclsqldb",
+			"type": "LinkedServiceReference"
+		},
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "ID",
+				"type": "int",
+				"precision": 10,
+				"scale": 255
+			},
+			{
+				"name": "First",
+				"type": "nchar",
+				"precision": 255,
+				"scale": 255
+			},
+			{
+				"name": "Last",
+				"type": "nchar",
+				"precision": 255,
+				"scale": 255
+			},
+			{
+				"name": "DOB",
+				"type": "date",
+				"precision": 255,
+				"scale": 255
+			},
+			{
+				"name": "LastModified",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			}
+		],
+		"typeProperties": {
+			"tableName": "[dbo].[contact]"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

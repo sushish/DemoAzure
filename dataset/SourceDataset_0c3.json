@@ -1,0 +1,52 @@
+{
+	"name": "SourceDataset_0c3",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "OnPrem",
+			"type": "LinkedServiceReference"
+		},
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "CustomerID",
+				"type": "nchar",
+				"precision": 255,
+				"scale": 255
+			},
+			{
+				"name": "LastName",
+				"type": "varchar",
+				"precision": 255,
+				"scale": 255
+			},
+			{
+				"name": "FirstName",
+				"type": "varchar",
+				"precision": 255,
+				"scale": 255
+			},
+			{
+				"name": "Birthdate",
+				"type": "date",
+				"precision": 255,
+				"scale": 255
+			},
+			{
+				"name": "CreatedOn",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "ModifiedOn",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			}
+		],
+		"typeProperties": {
+			"tableName": "[dbo].[Customers]"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

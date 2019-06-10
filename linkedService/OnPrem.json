@@ -1,0 +1,15 @@
+{
+	"name": "OnPrem",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"type": "SqlServer",
+		"typeProperties": {
+			"connectionString": "integrated security=False;data source=US7043NB;initial catalog=OnPrem;user id=sushish",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiJlMDRkOTRhOC00Y2M2LTQwZDYtYTM5OC1jNjUxMTNmMGJhN2EiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "babaIntegrationRunTime",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
