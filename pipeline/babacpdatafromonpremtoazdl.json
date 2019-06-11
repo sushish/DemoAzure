@@ -37,52 +37,7 @@
 							"fileExtension": ".txt"
 						}
 					},
-					"enableStaging": false,
-					"translator": {
-						"type": "TabularTranslator",
-						"mappings": [
-							{
-								"source": {
-									"name": "FirstName",
-									"type": "String"
-								},
-								"sink": {
-									"type": "String",
-									"ordinal": 1
-								}
-							},
-							{
-								"source": {
-									"name": "LastName",
-									"type": "String"
-								},
-								"sink": {
-									"type": "String",
-									"ordinal": 2
-								}
-							},
-							{
-								"source": {
-									"name": "Birthdate",
-									"type": "DateTime"
-								},
-								"sink": {
-									"type": "DateTime",
-									"ordinal": 3
-								}
-							},
-							{
-								"source": {
-									"name": "ModifiedOn",
-									"type": "DateTime"
-								},
-								"sink": {
-									"type": "DateTime",
-									"ordinal": 4
-								}
-							}
-						]
-					}
+					"enableStaging": false
 				},
 				"inputs": [
 					{
