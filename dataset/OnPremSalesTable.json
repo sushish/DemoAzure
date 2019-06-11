@@ -1,0 +1,38 @@
+{
+	"name": "OnPremSalesTable",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "OnPrem",
+			"type": "LinkedServiceReference"
+		},
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "ID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "CustomerID",
+				"type": "nchar"
+			},
+			{
+				"name": "DateOfSale",
+				"type": "date"
+			},
+			{
+				"name": "AmountOfSale",
+				"type": "money",
+				"precision": 19,
+				"scale": 4
+			},
+			{
+				"name": "ItemPurchased",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"tableName": "[dbo].[Sales]"
+		}
+	}
+}

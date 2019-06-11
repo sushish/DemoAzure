@@ -27,7 +27,15 @@
 						"type": "SqlServerSource"
 					},
 					"sink": {
-						"type": "AzureSqlSink"
+						"type": "DelimitedTextSink",
+						"storeSettings": {
+							"type": "AzureDataLakeStoreWriteSetting"
+						},
+						"formatSettings": {
+							"type": "DelimitedTextWriteSetting",
+							"quoteAllText": true,
+							"fileExtension": ".txt"
+						}
 					},
 					"enableStaging": false,
 					"translator": {
@@ -39,8 +47,8 @@
 									"type": "String"
 								},
 								"sink": {
-									"name": "First",
-									"type": "String"
+									"type": "String",
+									"ordinal": 1
 								}
 							},
 							{
@@ -49,8 +57,8 @@
 									"type": "String"
 								},
 								"sink": {
-									"name": "Last",
-									"type": "String"
+									"type": "String",
+									"ordinal": 2
 								}
 							},
 							{
@@ -59,8 +67,8 @@
 									"type": "DateTime"
 								},
 								"sink": {
-									"name": "DOB",
-									"type": "DateTime"
+									"type": "DateTime",
+									"ordinal": 3
 								}
 							},
 							{
@@ -69,8 +77,8 @@
 									"type": "DateTime"
 								},
 								"sink": {
-									"name": "LastModified",
-									"type": "DateTime"
+									"type": "DateTime",
+									"ordinal": 4
 								}
 							}
 						]
@@ -78,13 +86,13 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "SourceDataset_0c3",
+						"referenceName": "OnPremSalesTable",
 						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
 					{
-						"referenceName": "DestinationDataset_0c3",
+						"referenceName": "babacpdatafromonpremtoazdlnamecsv",
 						"type": "DatasetReference"
 					}
 				]
