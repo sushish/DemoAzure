@@ -1,0 +1,34 @@
+{
+	"name": "ADLSSales",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "babaazdlstoragelinkservice",
+			"type": "LinkedServiceReference"
+		},
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureDataLakeStoreLocation",
+				"fileName": "SalesData.csv",
+				"folderPath": "SalesData"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Prop_0",
+				"type": "String"
+			},
+			{
+				"name": "Prop_1",
+				"type": "String"
+			},
+			{
+				"name": "Prop_2",
+				"type": "String"
+			}
+		]
+	}
+}
