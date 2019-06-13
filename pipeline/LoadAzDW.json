@@ -14,8 +14,7 @@
 				},
 				"typeProperties": {
 					"source": {
-						"type": "SqlServerSource",
-						"sqlReaderQuery": "SELECT [CustomerID]\n      ,[LastName]\n      ,[FirstName]\n      ,[Birthdate]\n      ,[CreatedOn]\n      ,[ModifiedOn]\n  FROM [dbo].[Customers]"
+						"type": "SqlServerSource"
 					},
 					"sink": {
 						"type": "SqlDWSink",
