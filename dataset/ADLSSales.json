@@ -9,7 +9,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureDataLakeStoreLocation",
-				"fileName": "SalesData.csv",
+				"fileName": "export.txt",
 				"folderPath": "SalesData"
 			},
 			"columnDelimiter": ",",
@@ -27,6 +27,14 @@
 			},
 			{
 				"name": "Prop_2",
+				"type": "String"
+			},
+			{
+				"name": "Prop_3",
+				"type": "String"
+			},
+			{
+				"name": "Prop_4",
 				"type": "String"
 			}
 		]
