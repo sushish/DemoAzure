@@ -1,0 +1,37 @@
+{
+	"name": "AzureSqlDWStageSales",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDW",
+			"type": "LinkedServiceReference"
+		},
+		"type": "AzureSqlDWTable",
+		"schema": [
+			{
+				"name": "ID",
+				"type": "nchar"
+			},
+			{
+				"name": "CustomerID",
+				"type": "nchar"
+			},
+			{
+				"name": "DateOfSale",
+				"type": "date"
+			},
+			{
+				"name": "AmountOfSale",
+				"type": "money",
+				"precision": 19,
+				"scale": 4
+			},
+			{
+				"name": "ItemPurchased",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"tableName": "[dbo].[StageSales]"
+		}
+	}
+}
