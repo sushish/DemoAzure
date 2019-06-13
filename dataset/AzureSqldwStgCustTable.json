@@ -9,7 +9,7 @@
 		"schema": [
 			{
 				"name": "CustomerID",
-				"type": "nchar"
+				"type": "varchar"
 			},
 			{
 				"name": "LastName",
