@@ -1,5 +1,5 @@
 {
-	"name": "AzureSqlDWTable",
+	"name": "AzureSqlDWStgCustTable",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureSqlDW",

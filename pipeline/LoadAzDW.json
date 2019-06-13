@@ -106,7 +106,7 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "AzureSqlDWTable",
+						"referenceName": "AzureSqlDWStgCustTable",
 						"type": "DatasetReference"
 					}
 				]
