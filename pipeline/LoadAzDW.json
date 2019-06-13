@@ -14,7 +14,8 @@
 				},
 				"typeProperties": {
 					"source": {
-						"type": "SqlServerSource"
+						"type": "SqlServerSource",
+						"sqlReaderQuery": "SELECT [CustomerID]\n      ,[LastName]\n      ,[FirstName]\n      ,[Birthdate]\n      ,[CreatedOn]\n      ,[ModifiedOn]\n  FROM [dbo].[Customers]"
 					},
 					"sink": {
 						"type": "SqlDWSink",
@@ -106,7 +107,7 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "AzureSqlDWStgCustTable",
+						"referenceName": "AzureSqldwStgCustTable",
 						"type": "DatasetReference"
 					}
 				]
